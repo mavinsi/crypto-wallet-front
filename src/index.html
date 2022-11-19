@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LockWallet - Loading...</title>
+    <link href="./imgs/picon.png" rel="shortcut icon">
+    <link href="./assets/fontawesome/css/all.css" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet">
+
+</head>
+<style>
+    .scroll-hidden::-webkit-scrollbar {
+        height: 0px;
+        background: transparent;
+        /* make scrollbar transparent */
+    }
+
+    .principal-bg-ani {
+        background: linear-gradient(-45deg, #3b82f6, #2859a9, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        height: 100vh;
+    }
+
+    .principal-bg-ani {
+        margin: 0;
+        padding: 0;
+        font-family: "arial", heletica, sans-serif;
+        font-size: 12px;
+        background: #2980b9 url('./imgs/anibg.png') repeat 0 0;
+        -webkit-animation: 10s linear 0s normal none infinite animate;
+        -moz-animation: 10s linear 0s normal none infinite animate;
+        -ms-animation: 10s linear 0s normal none infinite animate;
+        -o-animation: 10s linear 0s normal none infinite animate;
+        animation: 10s linear 0s normal none infinite animate;
+
+    }
+
+    @-webkit-keyframes animate {
+        from {
+            background-position: 0 0;
+        }
+
+        to {
+            background-position: 500px 0;
+        }
+    }
+
+    @-moz-keyframes animate {
+        from {
+            background-position: 0 0;
+        }
+
+        to {
+            background-position: 500px 0;
+        }
+    }
+
+    @-ms-keyframes animate {
+        from {
+            background-position: 0 0;
+        }
+
+        to {
+            background-position: 500px 0;
+        }
+    }
+
+    @-o-keyframes animate {
+        from {
+            background-position: 0 0;
+        }
+
+        to {
+            background-position: 500px 0;
+        }
+    }
+
+    @keyframes animate {
+        from {
+            background-position: 0 0;
+        }
+
+        to {
+            background-position: 500px 0;
+        }
+    }
+
+    .picon {
+        animation-name: spin;
+        animation-duration: 20000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        /* transform: rotate(3deg); */
+        /* transform: rotate(0.3rad);/ */
+        /* transform: rotate(3grad); */
+        /* transform: rotate(.03turn);  */
+    }
+
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+</style>
+
+<body class="principal-bg-ani ">
+
+
+    <section class="grid place-items-center h-screen">
+        <section class="flex flex-col items-center justify-center h-screen">
+
+            <div> <img class="picon w-28 animate-pulse" src="./imgs/picon.png"></div>
+
+        </section>
+    </section>
+    </div>
+    <script src="../assets/scrollreveal.js"></script>
+    <script>
+        setTimeout(function () {
+            window.location.href = "./login"
+        }, 2500);
+    </script>
+    <script>
+        ScrollReveal({ reset: false });
+        ScrollReveal().reveal('.reveal_flip', { rotate: { x: 20, z: 20 }, duration: 1000, delay: 300 });
+        ScrollReveal().reveal('.reveal_bottom', { origin: 'bottom', distance: '400px', delay: 300 });
+        ScrollReveal().reveal('.reveal_top', { easing: 'ease-in-out', origin: 'top', distance: '400px', delay: 300 });
+        ScrollReveal().reveal('.reveal_left_delay', { origin: 'left', distance: '100px', delay: 700 });
+        ScrollReveal().reveal('.reveal_left', { origin: 'left', distance: '100px', delay: 400, });
+        ScrollReveal().reveal('.reveal_right', { origin: 'right', distance: '100px', delay: 400 });
+        ScrollReveal().reveal('.reveal_right_pic', { easing: "ease-in-out", origin: 'right', distance: '100px', delay: 400 });
+        ScrollReveal().reveal('.scale_up', { scale: 0.85, delay: 500 });
+    </script>
+</body>
+
+</html>
